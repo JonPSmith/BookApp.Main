@@ -4,7 +4,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using BookApp.Infrastructure.LoggingServices;
+using BookApp.Main.Infrastructure.LoggingServices;
 using TestSupport.EfHelpers;
 using Xunit;
 using Xunit.Extensions.AssertExtensions;

@@ -9,8 +9,8 @@ using BookApp.Books.ServiceLayer.CosmosDirect;
 using BookApp.Books.ServiceLayer.CosmosDirect.Services;
 using BookApp.Books.ServiceLayer.DisplayCommon;
 using BookApp.Books.ServiceLayer.DisplayCommon.Dtos;
-using BookApp.Infrastructure.LoggingServices;
 using BookApp.Main.Infrastructure;
+using BookApp.Main.Infrastructure.LoggingServices;
 using BookApp.UI.Models;
 using Microsoft.AspNetCore.Mvc;
 

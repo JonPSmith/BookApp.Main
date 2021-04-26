@@ -3,9 +3,9 @@
 
 using System.IO;
 using System.Linq;
+using BookApp.Books.Infrastructure.Seeding;
 using BookApp.Books.Persistence.EfCoreSql;
 using BookApp.Persistence.EfCoreSql.Books;
-using BookApp.Seeding.Infrastructure.Books;
 using Test.TestHelpers;
 using TestSupport.EfHelpers;
 using TestSupport.Helpers;

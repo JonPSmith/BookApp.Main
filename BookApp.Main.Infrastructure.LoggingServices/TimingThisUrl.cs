@@ -3,9 +3,8 @@
 
 using System;
 using System.Collections.Generic;
-using System.Threading;
 
-namespace BookApp.Infrastructure.LoggingServices
+namespace BookApp.Main.Infrastructure.LoggingServices
 {
     public class TimingThisUrl
     {

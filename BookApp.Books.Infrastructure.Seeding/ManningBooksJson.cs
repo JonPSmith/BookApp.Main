@@ -5,7 +5,7 @@ using System;
 using System.Linq;
 using BookApp.Books.Domain;
 
-namespace BookApp.Seeding.Infrastructure.Books
+namespace BookApp.Books.Infrastructure.Seeding
 {
     public class ManningBooksJson
     {

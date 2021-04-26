@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using BookApp.Books.ServiceLayer.CosmosEf;
 using BookApp.Books.ServiceLayer.DisplayCommon;
 using BookApp.Books.ServiceLayer.DisplayCommon.Dtos;
-using BookApp.Infrastructure.LoggingServices;
+using BookApp.Main.Infrastructure.LoggingServices;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookApp.UI.Controllers

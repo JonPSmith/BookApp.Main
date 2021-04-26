@@ -12,7 +12,7 @@ using Newtonsoft.Json;
 
 [assembly: InternalsVisibleTo("Test")]
 
-namespace BookApp.Seeding.Infrastructure.Books
+namespace BookApp.Books.Infrastructure.Seeding
 {
     public class ManningBookLoad
     {

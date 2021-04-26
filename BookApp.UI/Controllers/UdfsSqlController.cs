@@ -8,7 +8,7 @@ using BookApp.Books.ServiceLayer.DisplayCommon.Dtos;
 using BookApp.Books.ServiceLayer.GoodLinq;
 using BookApp.Books.ServiceLayer.UdfsSql;
 using BookApp.Books.ServiceLayer.UdfsSql.Dtos;
-using BookApp.Infrastructure.LoggingServices;
+using BookApp.Main.Infrastructure.LoggingServices;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 

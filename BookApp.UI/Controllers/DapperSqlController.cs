@@ -9,7 +9,7 @@ using BookApp.Books.ServiceLayer.DapperSql.DapperCode;
 using BookApp.Books.ServiceLayer.DisplayCommon;
 using BookApp.Books.ServiceLayer.DisplayCommon.Dtos;
 using BookApp.Books.ServiceLayer.GoodLinq;
-using BookApp.Infrastructure.LoggingServices;
+using BookApp.Main.Infrastructure.LoggingServices;
 using BookApp.Persistence.EfCoreSql.Books;
 using Microsoft.AspNetCore.Mvc;
 

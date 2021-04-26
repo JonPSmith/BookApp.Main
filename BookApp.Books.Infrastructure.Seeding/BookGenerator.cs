@@ -13,7 +13,7 @@ using BookApp.Books.Persistence.EfCoreSql;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace BookApp.Seeding.Infrastructure.Books
+namespace BookApp.Books.Infrastructure.Seeding
 {
     public class BookGenerator : IBookGenerator
     {

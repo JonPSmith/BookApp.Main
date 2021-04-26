@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using BookApp.Books.Domain;
 using BookApp.Books.Persistence.EfCoreSql;
 
-namespace BookApp.Seeding.Infrastructure.Books
+namespace BookApp.Books.Infrastructure.Seeding
 {
     public static class SeedDatabaseExtensions
     {

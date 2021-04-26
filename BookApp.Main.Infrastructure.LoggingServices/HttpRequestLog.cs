@@ -11,7 +11,7 @@ using Microsoft.Extensions.Logging;
 
 [assembly: InternalsVisibleTo("test")]
 
-namespace BookApp.Infrastructure.LoggingServices
+namespace BookApp.Main.Infrastructure.LoggingServices
 {
     /// <summary>
     ///     This class handles the storing/retrieval of logs for each Http request, as defined by
