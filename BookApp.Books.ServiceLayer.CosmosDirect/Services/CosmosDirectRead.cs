@@ -1,4 +1,4 @@
-﻿// Copyright (c) 2020 Jon P Smith, GitHub: JonPSmith, web: http://www.thereformedprogrammer.net/
+﻿// Copyright (c) 2021 Jon P Smith, GitHub: JonPSmith, web: http://www.thereformedprogrammer.net/
 // Licensed under MIT license. See License.txt in the project root for license information.
 
 using System;
@@ -18,27 +18,6 @@ namespace BookApp.Books.ServiceLayer.CosmosDirect.Services
 {
     public static class CosmosDirectRead
     {
-        private class LogCosmosCommand : IDisposable
-        {
-            private readonly string _command;
-            private readonly ILogger _myLogger;
-            private readonly Stopwatch _stopwatch = new Stopwatch();
-
-            public LogCosmosCommand(string command, CosmosDbContext context)
-            {
-                _command = command;
-                _myLogger = context.GetService<ILoggerFactory>().CreateLogger(nameof(CosmosDirectRead));
-                _stopwatch.Start();
-            }
-
-            public void Dispose()
-            {
-                _stopwatch.Stop();
-                _myLogger.LogInformation(new EventId(1, LogParts.CosmosEventName),
-                    $"Cosmos Query. Execute time = {_stopwatch.ElapsedMilliseconds} ms.\n" + _command);
-            }
-        }
-
         public static async Task<IEnumerable<CosmosBook>> 
             CosmosDirectQueryAsync(this CosmosDbContext context, 
                 SortFilterPageOptions options, string databaseName)
@@ -136,5 +115,25 @@ FROM c
 ";
         }
 
+        private class LogCosmosCommand : IDisposable
+        {
+            private readonly string _command;
+            private readonly ILogger _myLogger;
+            private readonly Stopwatch _stopwatch = new Stopwatch();
+
+            public LogCosmosCommand(string command, CosmosDbContext context)
+            {
+                _command = command;
+                _myLogger = context.GetService<ILoggerFactory>().CreateLogger(nameof(CosmosDirectRead));
+                _stopwatch.Start();
+            }
+
+            public void Dispose()
+            {
+                _stopwatch.Stop();
+                _myLogger.LogInformation(new EventId(1, LogParts.CosmosEventName),
+                    $"Cosmos Query. Execute time = {_stopwatch.ElapsedMilliseconds} ms.\n" + _command);
+            }
+        }
     }
 }

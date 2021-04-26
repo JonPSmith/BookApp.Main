@@ -1,4 +1,4 @@
-﻿// Copyright (c) 2020 Jon P Smith, GitHub: JonPSmith, web: http://www.thereformedprogrammer.net/
+﻿// Copyright (c) 2021 Jon P Smith, GitHub: JonPSmith, web: http://www.thereformedprogrammer.net/
 // Licensed under MIT license. See License.txt in the project root for license information.
 
 using System.Collections.Generic;
@@ -11,7 +11,6 @@ using BookApp.Books.ServiceLayer.DisplayCommon;
 using BookApp.Books.ServiceLayer.DisplayCommon.Dtos;
 using BookApp.Main.Infrastructure;
 using BookApp.Main.Infrastructure.LoggingServices;
-using BookApp.UI.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookApp.UI.Controllers

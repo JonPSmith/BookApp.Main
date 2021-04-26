@@ -1,4 +1,4 @@
-﻿// Copyright (c) 2020 Jon P Smith, GitHub: JonPSmith, web: http://www.thereformedprogrammer.net/
+﻿// Copyright (c) 2021 Jon P Smith, GitHub: JonPSmith, web: http://www.thereformedprogrammer.net/
 // Licensed under MIT license. See License.txt in the project root for license information.
 
 using System;
@@ -10,7 +10,6 @@ using BookApp.Books.Domain;
 using BookApp.Books.Infrastructure.CachedValues.EventHandlers;
 using BookApp.Books.Infrastructure.Seeding;
 using BookApp.Books.Persistence.EfCoreSql;
-using BookApp.Persistence.EfCoreSql.Books;
 using GenericEventRunner.ForSetup;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -223,6 +222,5 @@ namespace Test.UnitTests.TestInfrastructureBookSeeding
             books.SelectMany(x => x.AuthorsLink).All(x => x.LastUpdatedUtc >= timeNow).ShouldBeTrue();
             options.ManualDispose();
         }
-
     }
 }
