@@ -9,10 +9,11 @@ using BookApp.Books.ServiceLayer.DapperSql.DapperCode;
 using BookApp.Books.ServiceLayer.DisplayCommon;
 using BookApp.Books.ServiceLayer.DisplayCommon.Dtos;
 using BookApp.Books.ServiceLayer.GoodLinq;
+using BookApp.Main.FrontEnd.Controllers;
 using BookApp.Main.Infrastructure.LoggingServices;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BookApp.UI.Controllers
+namespace BookApp.Main.FrontEnd.Controllers
 {
     public class DapperSqlController : BaseTraceController
     {

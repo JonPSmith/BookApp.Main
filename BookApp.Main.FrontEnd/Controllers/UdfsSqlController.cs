@@ -8,11 +8,12 @@ using BookApp.Books.ServiceLayer.DisplayCommon.Dtos;
 using BookApp.Books.ServiceLayer.GoodLinq;
 using BookApp.Books.ServiceLayer.UdfsSql;
 using BookApp.Books.ServiceLayer.UdfsSql.Dtos;
+using BookApp.Main.FrontEnd.Controllers;
 using BookApp.Main.Infrastructure.LoggingServices;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace BookApp.UI.Controllers
+namespace BookApp.Main.FrontEnd.Controllers
 {
     public class UdfsSqlController : BaseTraceController
     {

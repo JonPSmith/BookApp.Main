@@ -2,9 +2,10 @@
 // Licensed under MIT license. See License.txt in the project root for license information.
 
 using BookApp.Orders.ServiceLayer.EfCoreSql.OrderServices;
+using BookApp.Main.FrontEnd.Controllers;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BookApp.UI.Controllers
+namespace BookApp.Main.FrontEnd.Controllers
 {
     public class OrdersController : BaseTraceController
     {

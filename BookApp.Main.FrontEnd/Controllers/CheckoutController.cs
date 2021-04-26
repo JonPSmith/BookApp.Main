@@ -2,6 +2,7 @@
 // Licensed under MIT license. See License.txt in the project root for license information.
 
 using System.Threading.Tasks;
+using BookApp.Main.FrontEnd.Controllers;
 using BookApp.Orders.BizLogic.BasketServices;
 using BookApp.Orders.BizLogic.Orders;
 using BookApp.Orders.Persistence.EfCoreSql;
@@ -12,7 +13,7 @@ using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace BookApp.UI.Controllers
+namespace BookApp.Main.FrontEnd.Controllers
 {
     public class CheckoutController : BaseTraceController
     {

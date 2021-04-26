@@ -13,14 +13,15 @@ using BookApp.Books.Persistence.EfCoreSql;
 using BookApp.Books.ServiceLayer.GoodLinq.Dtos;
 using BookApp.Main.Infrastructure;
 using BookApp.Main.Infrastructure.LoggingServices;
-using BookApp.UI.HelperExtensions;
+using BookApp.Main.FrontEnd.Controllers;
+using BookApp.Main.FrontEnd.HelperExtensions;
 using GenericServices;
 using GenericServices.AspNetCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SoftDeleteServices.Concrete;
 
-namespace BookApp.UI.Controllers
+namespace BookApp.Main.FrontEnd.Controllers
 {
     public class AdminController : BaseTraceController
     {

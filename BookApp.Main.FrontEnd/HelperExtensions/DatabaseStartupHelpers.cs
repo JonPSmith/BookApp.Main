@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 using BookApp.Books.Infrastructure.Seeding;
 using BookApp.Books.Persistence.CosmosDb;
 using BookApp.Books.Persistence.EfCoreSql;
+using BookApp.Main.FrontEnd;
 using BookApp.Main.Infrastructure;
 using BookApp.Orders.Persistence.EfCoreSql;
-using BookApp.UI.Models;
+using BookApp.Main.FrontEnd.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -17,7 +18,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace BookApp.UI.HelperExtensions
+namespace BookApp.Main.FrontEnd.HelperExtensions
 {
     public static class DatabaseStartupHelpers
     {

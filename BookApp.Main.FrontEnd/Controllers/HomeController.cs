@@ -3,12 +3,13 @@
 
 using System.Diagnostics;
 using BookApp.Books.Persistence.EfCoreSql;
+using BookApp.Main.FrontEnd.Controllers;
 using BookApp.Main.Infrastructure;
-using BookApp.UI.HelperExtensions;
-using BookApp.UI.Models;
+using BookApp.Main.FrontEnd.HelperExtensions;
+using BookApp.Main.FrontEnd.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BookApp.UI.Controllers
+namespace BookApp.Main.FrontEnd.Controllers
 {
     public class HomeController : BaseTraceController
     {
