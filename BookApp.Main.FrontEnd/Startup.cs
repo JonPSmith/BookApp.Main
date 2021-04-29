@@ -22,6 +22,7 @@ using BookApp.Orders.ServiceLayer.EfCoreSql.OrderServices;
 using BookApp.Main.FrontEnd.HelperExtensions;
 using BookApp.Main.FrontEnd.Logger;
 using BookApp.Main.FrontEnd.Services;
+using BookApp.Orders.BizDbAccess;
 using GenericEventRunner.ForSetup;
 using GenericServices.Setup;
 using Microsoft.AspNetCore.Builder;
@@ -32,6 +33,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using NetCore.AutoRegisterDi;
 using SoftDeleteServices.Configuration;
 
 namespace BookApp.Main.FrontEnd
@@ -75,6 +77,13 @@ namespace BookApp.Main.FrontEnd
             services.Configure<BookAppSettings>(options => 
                 Configuration.GetSection(nameof(BookAppSettings)).Bind(options));
             services.AddSingleton<IMenuBuilder, MenuBuilder>();
+
+            //This registers all the services across all the projects in this application
+            var diLogs = services.RegisterAssemblyPublicNonGenericClasses(
+                Assembly.GetAssembly(typeof(IDisplayOrdersService)),
+                Assembly.GetAssembly(typeof(IPlaceOrderBizLogic)),
+                Assembly.GetAssembly(typeof(IPlaceOrderDbAccess)))
+                .AsPublicImplementedInterfaces();
 
             //BookApp.Books startup
             var test = services.RegisterBooksServices(Configuration);
