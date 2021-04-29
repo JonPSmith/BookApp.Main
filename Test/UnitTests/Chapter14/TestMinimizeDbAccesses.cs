@@ -4,8 +4,8 @@
 using System;
 using System.Linq;
 using BookApp.Books.Domain;
-using BookApp.Books.Persistence.EfCoreSql;
-using BookApp.Books.ServiceLayer.DisplayCommon.Dtos;
+using BookApp.Books.Persistence;
+using BookApp.Books.ServiceLayer.Common.Dtos;
 using Microsoft.EntityFrameworkCore;
 using Test.TestHelpers;
 using TestSupport.EfHelpers;

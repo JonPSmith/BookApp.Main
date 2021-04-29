@@ -2,7 +2,7 @@
 // Licensed under MIT license. See License.txt in the project root for license information.
 
 using System.Diagnostics;
-using BookApp.Books.Persistence.EfCoreSql;
+using BookApp.Books.Persistence;
 using BookApp.Main.FrontEnd.Controllers;
 using BookApp.Main.Infrastructure;
 using BookApp.Main.FrontEnd.HelperExtensions;

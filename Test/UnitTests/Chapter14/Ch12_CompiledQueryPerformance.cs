@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using BookApp.Books.Domain;
-using BookApp.Books.Persistence.EfCoreSql;
+using BookApp.Books.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Test.TestHelpers;
 using TestSupport.Attributes;

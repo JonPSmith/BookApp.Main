@@ -3,8 +3,8 @@
 
 using System.Linq;
 using System.Threading.Tasks;
-using BookApp.Books.Persistence.EfCoreSql;
-using BookApp.Books.ServiceLayer.DisplayCommon;
+using BookApp.Books.Persistence;
+using BookApp.Books.ServiceLayer.Common;
 using BookApp.Books.ServiceLayer.GoodLinq.QueryObjects;
 using BookApp.Books.ServiceLayer.GoodLinq.Services;
 using Microsoft.EntityFrameworkCore;

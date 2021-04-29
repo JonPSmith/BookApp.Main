@@ -2,7 +2,7 @@
 // Licensed under MIT license. See License.txt in the project root for license information.
 
 using BookApp.Books.Domain.SupportTypes;
-using BookApp.Books.Persistence.EfCoreSql;
+using BookApp.Books.Persistence;
 using SoftDeleteServices.Configuration;
 
 namespace BookApp.Main.FrontEnd.SoftDeleteConfig

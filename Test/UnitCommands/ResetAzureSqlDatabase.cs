@@ -2,7 +2,7 @@
 // Licensed under MIT license. See License.txt in the project root for license information.
 
 using System.Reflection;
-using BookApp.Books.Persistence.EfCoreSql;
+using BookApp.Books.Persistence;
 using BookApp.Main.FrontEnd;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;

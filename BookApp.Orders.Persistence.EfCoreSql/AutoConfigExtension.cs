@@ -2,12 +2,11 @@
 // Licensed under MIT license. See License.txt in the project root for license information.
 
 using System;
-using BookApp.Books.Domain.SupportTypes;
 using BookApp.Orders.Domain.SupportTypes;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace BookApp.Common.Persistence
+namespace BookApp.Orders.Persistence.EfCoreSql
 {
     public static class AutoConfigExtension
     {
@@ -51,18 +50,12 @@ namespace BookApp.Common.Persistence
             }
         }
 
-        public static void AutoConfigureQueryFilters<TContext>(this ModelBuilder modelBuilder, DbContext currentContext)
+        public static void AutoConfigureQueryFilters(this ModelBuilder modelBuilder, OrderDbContext currentContext)
         {
             foreach (var entityType in modelBuilder.Model.GetEntityTypes())
             {
-                if (typeof(ISoftDelete).IsAssignableFrom(entityType.ClrType))
-                {
-                    entityType.AddSoftDeleteQueryFilter(
-                        MyQueryFilterTypes.SoftDelete);
-                }
-
                 if (typeof(IUserId).IsAssignableFrom(entityType.ClrType)
-                    && currentContext is IUserId userId )
+                    && currentContext is IUserId userId)
                 {
                     entityType.AddSoftDeleteQueryFilter(
                         MyQueryFilterTypes.UserId, userId);

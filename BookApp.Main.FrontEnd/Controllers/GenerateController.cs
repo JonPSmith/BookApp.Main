@@ -5,8 +5,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using BookApp.Books.Infrastructure.Seeding;
-using BookApp.Books.Persistence.CosmosDb;
-using BookApp.Books.Persistence.EfCoreSql;
+using BookApp.Books.Persistence;
 using BookApp.Main.FrontEnd.Controllers;
 using BookApp.Main.FrontEnd.HelperExtensions;
 using Microsoft.AspNetCore.Hosting;
@@ -30,9 +29,7 @@ namespace BookApp.Main.FrontEnd.Controllers
         // GET
         public IActionResult Index()
         {
-            var cosmosAvailable = HttpContext.RequestServices.GetService<CosmosDbContext>() != null;
-
-            return View((BookCount: _context.Books.Count(), cosmosAvailable));
+            return View((BookCount: _context.Books.Count(), false));
         }
 
         [HttpPost]

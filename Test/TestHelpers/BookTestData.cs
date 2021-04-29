@@ -4,7 +4,7 @@
 using System;
 using System.Collections.Generic;
 using BookApp.Books.Domain;
-using BookApp.Books.Persistence.EfCoreSql;
+using BookApp.Books.Persistence;
 
 namespace Test.TestHelpers
 {

@@ -4,7 +4,7 @@
 using System.IO;
 using System.Linq;
 using BookApp.Books.Infrastructure.Seeding;
-using BookApp.Books.Persistence.EfCoreSql;
+using BookApp.Books.Persistence;
 using Test.TestHelpers;
 using TestSupport.EfHelpers;
 using TestSupport.Helpers;

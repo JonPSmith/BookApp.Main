@@ -7,7 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using BookApp.Books.Domain;
 using BookApp.Books.Infrastructure.CachedValues.CheckFixCode;
-using BookApp.Books.Persistence.EfCoreSql;
+using BookApp.Books.Persistence;
 using Microsoft.Extensions.Logging;
 using Test.TestHelpers;
 using TestSupport.EfHelpers;

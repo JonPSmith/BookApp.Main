@@ -2,7 +2,7 @@
 // Licensed under MIT license. See License.txt in the project root for license information.
 
 using System.Linq;
-using BookApp.Books.Persistence.EfCoreSql;
+using BookApp.Books.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Test.TestHelpers;
 using TestSupport.Helpers;

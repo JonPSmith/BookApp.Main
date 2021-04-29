@@ -3,8 +3,8 @@
 
 using System.Linq;
 using BookApp.Books.Domain;
-using BookApp.Books.Persistence.EfCoreSql;
-using BookApp.Books.ServiceLayer.DisplayCommon.Dtos;
+using BookApp.Books.Persistence;
+using BookApp.Books.ServiceLayer.Common.Dtos;
 using BookApp.Books.ServiceLayer.GoodLinq.QueryObjects;
 using Microsoft.EntityFrameworkCore;
 using Test.TestHelpers;

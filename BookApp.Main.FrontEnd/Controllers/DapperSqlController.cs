@@ -4,10 +4,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using BookApp.Books.Persistence.EfCoreSql;
-using BookApp.Books.ServiceLayer.DapperSql.DapperCode;
-using BookApp.Books.ServiceLayer.DisplayCommon;
-using BookApp.Books.ServiceLayer.DisplayCommon.Dtos;
+using BookApp.Books.Persistence;
+using BookApp.Books.ServiceLayer.Common;
+using BookApp.Books.ServiceLayer.Common.Dtos;
+using BookApp.Books.ServiceLayer.Dapper.DapperCode;
 using BookApp.Books.ServiceLayer.GoodLinq;
 using BookApp.Main.FrontEnd.Controllers;
 using BookApp.Main.Infrastructure.LoggingServices;

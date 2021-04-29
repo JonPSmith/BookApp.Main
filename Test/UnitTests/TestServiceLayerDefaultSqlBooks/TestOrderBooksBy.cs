@@ -3,8 +3,8 @@
 
 using System;
 using System.Linq;
-using BookApp.Books.Persistence.EfCoreSql;
-using BookApp.Books.ServiceLayer.DisplayCommon;
+using BookApp.Books.Persistence;
+using BookApp.Books.ServiceLayer.Common;
 using BookApp.Books.ServiceLayer.GoodLinq.QueryObjects;
 using Test.TestHelpers;
 using TestSupport.EfHelpers;

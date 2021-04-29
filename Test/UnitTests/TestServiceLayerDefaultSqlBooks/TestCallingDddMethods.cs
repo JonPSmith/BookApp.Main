@@ -5,7 +5,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using BookApp.Books.Domain;
-using BookApp.Books.Persistence.EfCoreSql;
+using BookApp.Books.Persistence;
 using BookApp.Books.ServiceLayer.GoodLinq.Dtos;
 using GenericServices.PublicButHidden;
 using GenericServices.Setup;

@@ -6,7 +6,7 @@ using System.Linq;
 using BookApp.Books.Domain;
 using BookApp.Books.Domain.DomainEvents;
 using BookApp.Books.Infrastructure.CachedValues.EventHandlers;
-using BookApp.Books.Persistence.EfCoreSql;
+using BookApp.Books.Persistence;
 using GenericEventRunner.ForSetup;
 using Microsoft.EntityFrameworkCore;
 using Test.TestHelpers;

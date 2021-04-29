@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="BookApp.Books" Version="1.1.0-preview001" />
     <PackageReference Include="Dapper" Version="2.0.78" />
     <PackageReference Include="EfCore.SchemaCompare" Version="5.1.4" />
     <PackageReference Include="EfCore.TestSupport" Version="5.0.0" />
@@ -36,18 +37,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BookApp.Orders.BizLogic\BookApp.Orders.BizLogic.csproj" />
-    <ProjectReference Include="..\BookApp.Books.Domain\BookApp.Books.Domain.csproj" />
     <ProjectReference Include="..\BookApp.Orders.Domain\BookApp.Orders.Domain.csproj" />
-    <ProjectReference Include="..\BookApp.Books.Infrastructure.CachedValues\BookApp.Books.Infrastructure.CachedValues.csproj" />
-    <ProjectReference Include="..\BookApp.Books.Infrastructure.CosmosDb\BookApp.Books.Infrastructure.CosmosDb.csproj" />
-    <ProjectReference Include="..\BookApp.Books.Persistence.EfCoreSql\BookApp.Books.Persistence.EfCoreSql.csproj" />
-    <ProjectReference Include="..\BookApp.Books.Persistence.CosmosDb\BookApp.Books.Persistence.CosmosDb.csproj" />
     <ProjectReference Include="..\BookApp.Orders.Persistence.EfCoreSql\BookApp.Orders.Persistence.EfCoreSql.csproj" />
     <ProjectReference Include="..\BookApp.Orders.Persistence.DbAccess\BookApp.Orders.Persistence.DbAccess.csproj" />
-    <ProjectReference Include="..\BookApp.Books.ServiceLayer.CosmosDirect\BookApp.Books.ServiceLayer.CosmosDirect.csproj" />
-    <ProjectReference Include="..\BookApp.Books.ServiceLayer.GoodLinq\BookApp.Books.ServiceLayer.GoodLinq.csproj" />
-    <ProjectReference Include="..\BookApp.Books.ServiceLayer.UdfsSql\BookApp.Books.ServiceLayer.UdfsSql.csproj" />
-    <ProjectReference Include="..\BookApp.Books.Infrastructure.Seeding\BookApp.Books.Infrastructure.Seeding.csproj" />
     <ProjectReference Include="..\BookApp.Main.FrontEnd\BookApp.Main.FrontEnd.csproj" />
   </ItemGroup>
 

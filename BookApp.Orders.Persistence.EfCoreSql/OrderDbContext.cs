@@ -3,7 +3,7 @@
 
 using System;
 using System.Reflection;
-using BookApp.Common.Persistence;
+using BookApp.Orders.Persistence;
 using BookApp.Orders.Domain;
 using BookApp.Orders.Domain.SupportTypes;
 using Microsoft.EntityFrameworkCore;
@@ -27,7 +27,7 @@ namespace BookApp.Orders.Persistence.EfCoreSql
         protected override void OnModelCreating(ModelBuilder modelBuilder)                 
         {
             modelBuilder.AutoConfigureTypes();
-            modelBuilder.AutoConfigureQueryFilters<OrderDbContext>(this);
+            modelBuilder.AutoConfigureQueryFilters(this);
 
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         }

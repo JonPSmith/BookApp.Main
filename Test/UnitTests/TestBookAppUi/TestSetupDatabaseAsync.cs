@@ -6,11 +6,7 @@ using System.Linq;
 using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
-using BookApp.Books.Infrastructure.CosmosDb;
-using BookApp.Books.Infrastructure.CosmosDb.EventsHandlers;
-using BookApp.Books.Infrastructure.CosmosDb.Services;
-using BookApp.Books.Persistence.CosmosDb;
-using BookApp.Books.Persistence.EfCoreSql;
+using BookApp.Books.Persistence;
 using BookApp.Main.FrontEnd.HelperExtensions;
 using BookApp.Orders.Persistence.EfCoreSql;
 using GenericEventRunner.ForSetup;
@@ -34,18 +30,12 @@ namespace Test.UnitTests.TestBookAppUi
             //SETUP
             var booksOption = this.CreateUniqueClassOptions<BookDbContext>();
             var orderOption = this.CreateUniqueClassOptions<OrderDbContext>();
-            var cosmosOption = this.GetCosmosDbOptions<CosmosDbContext>();
             var services = new ServiceCollection();
-
-            services.RegisterGenericEventRunner(Assembly.GetAssembly(typeof(BookChangeHandlerAsync)));
-            services.AddTransient<IBookToCosmosBookService, BookToCosmosBookService>();
 
             services.AddSingleton(booksOption);
             services.AddScoped<BookDbContext>();
             services.AddSingleton(orderOption);
             services.AddScoped<OrderDbContext>();
-            services.AddSingleton(cosmosOption);
-            services.AddScoped<CosmosDbContext>();
             services.AddSingleton<IWebHostEnvironment>(new MyWebHostEnvironment {WebRootPath = TestData.GetTestDataDir()});
             services.AddLogging();
 
@@ -55,10 +45,6 @@ namespace Test.UnitTests.TestBookAppUi
             using (var bookContext = new BookDbContext(booksOption))
             {
                 bookContext.Database.EnsureDeleted();
-            }
-            using (var cosmosContext = new CosmosDbContext(cosmosOption))
-            {
-                await cosmosContext.Database.EnsureDeletedAsync();
             }
 
             //ATTEMPT

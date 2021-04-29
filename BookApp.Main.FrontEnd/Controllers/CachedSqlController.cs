@@ -3,9 +3,9 @@
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using BookApp.Books.ServiceLayer.CachedSql;
-using BookApp.Books.ServiceLayer.DisplayCommon;
-using BookApp.Books.ServiceLayer.DisplayCommon.Dtos;
+using BookApp.Books.ServiceLayer.Cached;
+using BookApp.Books.ServiceLayer.Common;
+using BookApp.Books.ServiceLayer.Common.Dtos;
 using BookApp.Books.ServiceLayer.GoodLinq;
 using BookApp.Main.Infrastructure.LoggingServices;
 using Microsoft.AspNetCore.Mvc;

@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using BookApp.Books.Domain;
-using BookApp.Books.Persistence.EfCoreSql;
+using BookApp.Books.Persistence;
 using Microsoft.EntityFrameworkCore;
 using TestSupport.EfHelpers;
 using Xunit;

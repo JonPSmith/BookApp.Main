@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using BookApp.Books.Domain;
 using BookApp.Books.Infrastructure.CachedValues.EventHandlers;
 using BookApp.Books.Infrastructure.Seeding;
-using BookApp.Books.Persistence.EfCoreSql;
+using BookApp.Books.Persistence;
 using GenericEventRunner.ForSetup;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
