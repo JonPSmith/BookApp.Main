@@ -33,7 +33,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using NetCore.AutoRegisterDi;
 using SoftDeleteServices.Configuration;
 
 namespace BookApp.Main.FrontEnd
@@ -51,7 +50,7 @@ namespace BookApp.Main.FrontEnd
         public void ConfigureServices(IServiceCollection services) //#A
         {
             services.AddControllersWithViews() //#B
-                .AddRazorRuntimeCompilation() //This recompile a razor page if you edit it while the app is running
+                //.AddRazorRuntimeCompilation() //This recompile a razor page if you edit it while the app is running
                 //Added this because my logs display needs the enum as a string
                 .AddJsonOptions(opts =>
                 {

@@ -40,7 +40,6 @@
     <PackageReference Include="EfCore.GenericServices.AspNetCore" Version="4.1.1" />
     <PackageReference Include="EfCore.SoftDeleteServices" Version="1.0.0" />
     <PackageReference Include="GenericServices.StatusGeneric" Version="1.1.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Cosmos" Version="5.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.1">
