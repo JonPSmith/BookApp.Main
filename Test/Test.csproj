@@ -39,8 +39,8 @@
     <ProjectReference Include="..\BookApp.Orders.BizLogic\BookApp.Orders.BizLogic.csproj" />
     <ProjectReference Include="..\BookApp.Orders.Domain\BookApp.Orders.Domain.csproj" />
     <ProjectReference Include="..\BookApp.Orders.Persistence.EfCoreSql\BookApp.Orders.Persistence.EfCoreSql.csproj" />
-    <ProjectReference Include="..\BookApp.Orders.Persistence.DbAccess\BookApp.Orders.Persistence.DbAccess.csproj" />
     <ProjectReference Include="..\BookApp.Main.FrontEnd\BookApp.Main.FrontEnd.csproj" />
+    <ProjectReference Include="..\BookApp.Orders.BizDbAccess\BookApp.Orders.BizDbAccess.csproj" />
   </ItemGroup>
 
 </Project>
