@@ -4,5 +4,6 @@ This is a version of the BookApp used in the [Evolving modular monoliths series]
 
 This specific version:
 
-- Contains BookApp UI (front-end), the `Orders` bounded context code and, the `BookApp.Books` NuGet package (!!! link !!!).
-- Uses the modularize bounded context approach (!!! link !!!), where each project is focused on one job.
+- Contains BookApp FrontEnd, the `Orders` bounded context code and
+- The [`BookApp.Books`](https://github.com/JonPSmith/BookApp.Books) part of the app is provided via a NuGet package - see the second part of the evolving modular monoliths series for how this was done.  !!! LINK !!! 
+- Uses the [modularize bounded context approach](https://www.thereformedprogrammer.net/evolving-modular-monoliths-1-an-architecture-for-net/#3-modularize-inside-a-bounded-context), where each project is focused on one job.
